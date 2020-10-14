@@ -1,0 +1,130 @@
+AWS DocumentDB, Azure CosmosDB
+
+ 
+
+ 
+
+PoC:
+
+·         Connect to DocumentDB
+
+·         Create Collections
+
+·         Add entries and retrieve those
+
+ 
+
+Protect Database
+
+·         Snapshot
+
+o    Snapshot APIs
+
+o    Policy based snapshot
+
+·         Replicate
+
+o    Replicate the snapshots to different domain (region or account/region)
+
+·         Scenario 1
+
+§  A/C 1 R1 - CP Deployed
+
+·         Protecting R1, R2 and replicating snapshots to R3
+
+·         Scenario 2
+
+§  A/C 1 R1 - CP Deployed
+
+·         Protecting R1, R2 and replicating snapshots to A/C 2 R3
+
+ 
+
+
+Restore Database in target domain:
+
+ 
+
+Advantages of DB as a service:
+
+·         DB management overhead:
+
+o    The additional overhead of managing db is not with CloudPoint
+
+·         Availability:
+
+o    Highly available services
+
+·         Auto Scaling
+
+o    Scale as per the requirements
+
+ 
+
+·         Deployment Scenarios:
+
+ 
+
+·         On-prem
+
+o    Mongo
+
+ 
+
+·         Cloud
+
+o    AWS
+
+o    Azure
+
+o    GCP
+
+ 
+
+·         DB agnostic Wrapper
+
+o    Abstract the DB internals
+
+o    Generic interfaces
+
+o    Python based SDKs
+
+ 
+
+·         Protect CP Asset Database
+
+o    Perform Snapshot in source domain
+
+ 
+
+·         Replicate CP Asset Database
+
+·         Disaster Recovery
+
+o    Restore of CP Asset Database
+
+o    Bring up CP services
+
+ 
+
+ 
+
+Next Week:
+
+·         Write PoC code for different databases
+
+·         Gather Documentation for AWS DocumentDB and Azure CosmosDB
+
+o    REST APIs/ SDK interfaces for basic database operations
+
+o    Snapshot / Replication
+
+o    Restore
+
+·         DR based on event
+
+o    AWS ASG (Auto scaling group)
+
+o    AWS Lambda
+
+·         Instance has gone down, region outage
