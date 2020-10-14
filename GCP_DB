@@ -1,0 +1,10 @@
+Cloud Storage:
+
+* Unlimited storage with no minimum object size
+* Worldwide accessibility and worldwide storage locations
+* Low latency  
+* High durability (99.999999999% annual durability)
+* Geo-redundancy if the data is stored in a multi-region or dual-region
+
+$$$ GCP storage products: https://cloud.google.com/products/storage
+
